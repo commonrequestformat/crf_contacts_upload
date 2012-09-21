@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CRF Contacts Upload feature.
+ */
+
+include_once 'crf_contacts_upload.features.inc';
