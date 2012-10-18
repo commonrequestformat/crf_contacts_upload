@@ -43,6 +43,8 @@ function crf_contacts_upload_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
+        'options_list_callback' => '',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -193,6 +195,7 @@ function crf_contacts_upload_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(

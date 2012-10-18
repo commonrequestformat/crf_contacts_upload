@@ -17,6 +17,13 @@ features[field][] = node-contacts_upload-field_contacts_upload_file
 features[field][] = node-contacts_upload-field_crf_request
 features[node][] = contacts_upload
 features[rules_config][] = rules_email_manager_on_contacts_upload
+features[user_permission][] = create contacts_upload content
+features[user_permission][] = delete any contact content
+features[user_permission][] = delete any contacts_upload content
+features[user_permission][] = delete own contacts_upload content
+features[user_permission][] = edit any contact content
+features[user_permission][] = edit any contacts_upload content
+features[user_permission][] = edit own contacts_upload content
 features[variable][] = auto_entitylabel_node_contacts_upload
 features[variable][] = comment_anonymous_contacts_upload
 features[variable][] = comment_contacts_upload
@@ -38,5 +45,3 @@ features[variable][] = print_display_urllist_contacts_upload
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info
 l10n url = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/l10n_server.xml
-
-
