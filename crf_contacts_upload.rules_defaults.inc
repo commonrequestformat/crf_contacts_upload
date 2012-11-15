@@ -42,7 +42,8 @@ function crf_contacts_upload_default_rules_configuration() {
               }
             ]
           }
-        }
+        },
+        { "redirect" : { "url" : "\\u003Cfront\\u003E" } }
       ]
     }
   }');

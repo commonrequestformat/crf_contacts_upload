@@ -117,8 +117,7 @@ function crf_contacts_upload_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_contacts_upload';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'status',
   );
   $export['node_options_contacts_upload'] = $strongarm;
 
