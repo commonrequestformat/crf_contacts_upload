@@ -5,3 +5,24 @@
  */
 
 include_once 'crf_contacts_upload.features.inc';
+
+
+/**
+ * Implements hook_node_insert().
+ */
+function crf_contacts_upload_node_insert($node) {
+  if ($node->type == 'contact' && $node->is_new) {
+    // Add information focal point to cluster term
+    // on creation of a new contact.
+    $clusters = $node->field_clusters['und'];
+    if (!empty($clusters)) {
+      foreach ($clusters as $item) {
+        $cluster_term = taxonomy_term_load($item['tid']);
+        $cluster_term->field_information_focal_points['und'][]['target_id'] = $node->nid;
+        taxonomy_term_save($cluster_term);
+      }
+    }
+  }
+}
+
+

@@ -63,7 +63,7 @@ function crf_contacts_upload_field_default_fields() {
             'diff_custom_settings' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -136,7 +136,7 @@ function crf_contacts_upload_field_default_fields() {
             'diff_custom_settings' => array(),
           ),
           'type' => 'file_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -234,7 +234,7 @@ function crf_contacts_upload_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
