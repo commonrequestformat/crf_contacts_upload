@@ -126,7 +126,7 @@ function crf_contacts_upload_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'contacts_upload',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'You can upload an Excel spreadsheet with a list of contact details by attaching a file to this form or add a contact using the <a href="contact">Contact form</a>.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -160,11 +160,13 @@ function crf_contacts_upload_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
         'weight' => '3',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -265,6 +267,7 @@ function crf_contacts_upload_field_default_fields() {
   t('Cluster');
   t('File');
   t('Request');
+  t('You can upload an Excel spreadsheet with a list of contact details by attaching a file to this form or add a contact using the <a href="contact">Contact form</a>.');
 
   return $fields;
 }

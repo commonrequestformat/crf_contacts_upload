@@ -26,3 +26,23 @@ function crf_contacts_upload_node_insert($node) {
 }
 
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function crf_contacts_upload_form_contacts_upload_node_form_alter(&$form, &$form_state, $form_id) {
+  $cluster_tid = isset($_GET['edit']['field_cluster']['und']) ? $_GET['edit']['field_cluster']['und'] : NULL;
+  
+  $form['existing_contacts'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Existing contacts'),
+  );
+  $form['existing_contacts']['contacts_view'] = array(
+    '#type' => 'item',
+    '#markup' => views_embed_view('contacts', 'page_2', $cluster_tid),
+    '#weight' => 10,
+  );
+}
+
+
+
+
