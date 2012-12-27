@@ -152,7 +152,7 @@ function crf_contacts_upload_field_default_fields() {
       'settings' => array(
         'description_field' => 0,
         'file_directory' => 'contacts_upload',
-        'file_extensions' => 'txt xls xlsx',
+        'file_extensions' => 'txt csv xls xlsx doc docx ppt pdf',
         'max_filesize' => '',
         'user_register_form' => FALSE,
       ),
