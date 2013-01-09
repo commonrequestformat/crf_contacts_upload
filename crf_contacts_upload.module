@@ -41,6 +41,11 @@ function crf_contacts_upload_form_contacts_upload_node_form_alter(&$form, &$form
     '#markup' => views_embed_view('contacts', 'page_2', $cluster_tid),
     '#weight' => 10,
   );
+  
+  $node = $form['#node'];
+  if (!isset($node->nid)) {  
+    $form['actions']['submit']['#value'] = t('Submit to OCHA');
+  }
 }
 
 
