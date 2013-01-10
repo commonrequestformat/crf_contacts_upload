@@ -147,7 +147,7 @@ function crf_contacts_upload_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_contacts_upload_file',
-      'label' => 'File',
+      'label' => 'Attach Cluster Contacts files',
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
@@ -264,8 +264,8 @@ function crf_contacts_upload_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Attach Cluster Contacts files');
   t('Cluster');
-  t('File');
   t('Request');
   t('You can upload an Excel spreadsheet with a list of contact details by attaching a file to this form or add a contact using the <a href="contact">Contact form</a>.');
 
