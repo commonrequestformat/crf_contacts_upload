@@ -20,7 +20,7 @@ function crf_contacts_upload_ctools_plugin_api() {
 function crf_contacts_upload_node_info() {
   $items = array(
     'contacts_upload' => array(
-      'name' => t('Contacts Upload'),
+      'name' => t('Contacts'),
       'base' => 'node_content',
       'description' => t('A free-form contacts file upload to be submitted to OCHA.'),
       'has_title' => '1',

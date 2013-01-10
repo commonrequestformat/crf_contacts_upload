@@ -30,16 +30,22 @@ function crf_contacts_upload_node_insert($node) {
  * Implements hook_form_FORM_ID_alter().
  */
 function crf_contacts_upload_form_contacts_upload_node_form_alter(&$form, &$form_state, $form_id) {
+  if (module_exists('entityconnect')) {
+    unset($form['field_crf_request']['add_entityconnect__field_crf_request_all_']);
+    unset($form['field_crf_request']['edit_entityconnect__field_crf_request_all_']);
+  }
+  
   $cluster_tid = isset($_GET['edit']['field_cluster']['und']) ? $_GET['edit']['field_cluster']['und'] : NULL;
   
   $form['existing_contacts'] = array(
     '#type' => 'fieldset',
     '#title' => t('Existing contacts'),
+    '#weight' => 10,
   );
   $form['existing_contacts']['contacts_view'] = array(
     '#type' => 'item',
     '#markup' => views_embed_view('contacts', 'page_2', $cluster_tid),
-    '#weight' => 10,
+    '#prefix' => t('You can see what contacts we already have by searching below.'),
   );
   
   $node = $form['#node'];
