@@ -14,9 +14,9 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['create contacts_upload content'] = array(
     'name' => 'create contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -25,8 +25,8 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['delete any contact content'] = array(
     'name' => 'delete any contact content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -35,8 +35,8 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['delete any contacts_upload content'] = array(
     'name' => 'delete any contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -45,9 +45,9 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['delete own contacts_upload content'] = array(
     'name' => 'delete own contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -56,8 +56,8 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['edit any contact content'] = array(
     'name' => 'edit any contact content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -66,8 +66,8 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['edit any contacts_upload content'] = array(
     'name' => 'edit any contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -76,9 +76,9 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['edit own contacts_upload content'] = array(
     'name' => 'edit own contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -87,8 +87,8 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['view any unpublished contact content'] = array(
     'name' => 'view any unpublished contact content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'view_unpublished',
   );
@@ -97,9 +97,9 @@ function crf_contacts_upload_user_default_permissions() {
   $permissions['view any unpublished contacts_upload content'] = array(
     'name' => 'view any unpublished contacts_upload content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'view_unpublished',
   );

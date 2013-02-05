@@ -77,6 +77,7 @@ function crf_contacts_upload_field_default_fields() {
       'label' => 'Cluster',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -118,6 +119,9 @@ function crf_contacts_upload_field_default_fields() {
       'settings' => array(
         'display_default' => 1,
         'display_field' => 1,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -151,6 +155,7 @@ function crf_contacts_upload_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'contacts_upload',
         'file_extensions' => 'txt csv xls xlsx doc docx ppt pdf',
         'max_filesize' => '',
@@ -250,6 +255,7 @@ function crf_contacts_upload_field_default_fields() {
       'label' => 'Request',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
