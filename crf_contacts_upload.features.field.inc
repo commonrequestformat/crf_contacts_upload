@@ -85,7 +85,7 @@ function crf_contacts_upload_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -169,20 +169,20 @@ function crf_contacts_upload_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '3',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
   );
 
-  // Exported field: 'node-contacts_upload-field_crf_request'.
-  $fields['node-contacts_upload-field_crf_request'] = array(
+  // Exported field: 'node-contacts_upload-field_request'.
+  $fields['node-contacts_upload-field_request'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_crf_request',
+      'field_name' => 'field_request',
       'field_permissions' => array(
         'type' => '0',
       ),
@@ -211,16 +211,12 @@ function crf_contacts_upload_field_default_fields() {
             ),
           ),
           'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'field_asst_contact_email:email',
-            'property' => 'nid',
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'crf_request' => 'crf_request',
+            'request' => 'request',
           ),
         ),
-        'handler_submit' => 'Change handler',
         'target_type' => 'node',
       ),
       'translatable' => '0',
@@ -241,7 +237,7 @@ function crf_contacts_upload_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '2',
+          'weight' => 3,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -251,7 +247,9 @@ function crf_contacts_upload_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_crf_request',
+      'entityconnect_unload_add' => '1',
+      'entityconnect_unload_edit' => '1',
+      'field_name' => 'field_request',
       'label' => 'Request',
       'required' => 1,
       'settings' => array(
@@ -261,10 +259,13 @@ function crf_contacts_upload_field_default_fields() {
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '2',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 

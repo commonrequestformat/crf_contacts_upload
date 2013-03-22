@@ -12,6 +12,7 @@ function crf_contacts_upload_default_rules_configuration() {
   $items['rules_email_ocha_focal_point_on_contacts_upload'] = entity_import('rules_config', '{ "rules_email_ocha_focal_point_on_contacts_upload" : {
       "LABEL" : "Email OCHA focal point on contacts upload",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_insert", "node_update" ],
       "IF" : [
